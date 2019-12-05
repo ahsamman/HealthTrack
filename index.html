@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Health Tracker</title>
+   <meta name="viewport" content="width=device-width">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="/styles/reset.css" type="text/css">
+   <link rel="stylesheet" href="/styles/main.css" type="text/css">
+</head>
+
+<body>
+   <div class="Site">
+      <header class="SiteHeader">
+         <div class="Container">
+            <div class="FlexContent">
+               <div class="Logo">
+                  <div class="LogoText"> Health Tracker </div>
+               </div>
+               <nav class="SiteNavigation">
+                  <ul>
+                     <li> <a href="#Timeline">Timeline</a> </li>
+                     <li> <a href="#History">History</a> </li>
+                     <li> <a href="#Metrics">Metrics</a> </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </header>
+      <main class="SiteBody">
+         <div class="Container">
+            <article> <a href="https://www.heart.org" class="PostLink">
+                  <div class="HeroPost">
+                     <div class="FeaturedImage"> <img src="/Image/heroHealthImage.jpg"> </div>
+                  </div>
+               </a> </article>
+         </div>
+         <div class="Container" id="Timeline">
+            <section class="Section Section--featured" id="featured">
+               <header class="SectionHeader">
+                  <h2>Timeline</h2>
+               </header>
+               <div class="Greeting"></div>
+               <form action="/adddata" method="POST">
+                  <select name="option" id="selection">
+                     <option value="HeartBeat">Heart Beat</option>
+                     <option value="BP">Blood Pressure</option>
+                     <option value="Weight">Weight</option>
+                  </select>
+                  <input type="text" id="textbox" placeholder="measure" name="measure">
+                  <button type="submit" id="button">Add Data</button>
+               </form>
+               <div class="container" id="tbl">       
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Measures</th>
+                      </tr>
+                    </thead>
+                    <tbody id="list">
+                    </tbody>
+                  </table>
+                </div>
+            </section>
+         </div>
+         <div class="Container" id="History">
+            <section class="Section Section--featured" id="featured">
+               <header class="SectionHeader">
+                  <h2>History</h2>
+               </header>
+               <div class="Greeting" id="a"></div>
+               <div class="container" id="tbl">       
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Measures</th>
+                      </tr>
+                    </thead>
+                    <tbody id="list">
+                    </tbody>
+                  </table>
+                </div>
+            </section>
+         </div>
+         <div class="Container" id="Metrics">
+            <section class="Section Section--featured" id="featured">
+               <header class="SectionHeader">
+                  <h2>Metrics</h2>
+               </header>
+            </section>
+         </div>
+      </main>
+      <footer class="SiteFooter">
+         <div class="Container">
+            <div class="FlexContent">
+               <div class="Logo">
+                  <div class="LogoText"> Health Tracker </div>
+               </div>
+            </div>
+            <div class="Copyright"> © 2019 Health Tracker, Inc. All Rights Reserved </div>
+         </div>
+      </footer>
+   </div>
+   <script type="text/javascript" src="/scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+body {
+  background: #fffaeb;
+  color: #50342b;
+}
+.Site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Container {
+  margin: auto;
+  max-width: 1140px;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.FlexContent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .FlexContent {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+}
+
+.SiteHeader {
+  align-content: center;
+  background: #fceeed;
+  display: flex;
+  padding: 8px 0;
+  position: relative;
+  min-height: 60px;
+  z-index: 100;
+}
+
+.Logo {
+  align-items: center;
+  display: flex;
+}
+.LogoImage {
+  margin-right: 8px;
+  width: 30px;
+  font-size: 28px;
+  line-height: 1;
+}
+.LogoText {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.SiteNavigation ul {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.SiteNavigation a {
+  color: currentColor;
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 800;
+  opacity: 1;
+  padding: 12px 20px;
+  text-decoration: none;
+  transition: opacity 160ms linear;
+}
+
+.SiteNavigation a:hover {
+  opacity: 0.5;
+}
+
+.HeroPost .FeaturedImage {
+  margin: 20px 0;
+  width: 100%;
+  height: 520px;
+}
+
+.Section {
+  margin: 60px 0;
+}
+
+@media (min-width: 768px) {
+  .Section {
+      margin: 40px 0;
+  }
+}
+
+.SectionHeader {
+  padding: 20px 0 10px;
+  margin: 20px 0;
+  border-bottom: 3px solid #fceeed;
+}
+
+.SectionHeader h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.Greeting{
+  font-weight: bold;
+  padding: 12px 0px;
+  margin: 20px 0;
+}
+
+.FeaturedPostGrid {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .FeaturedPostGrid {
+      display: flex;
+      flex-direction: row;
+      margin: 0 calc(10px * -1);
+      flex-wrap: wrap;
+  }
+}
+
+.FeaturedPost {
+  margin: 0 0 28px;
+}
+
+@media (min-width: 768px) {
+  .FeaturedPost {
+      width: calc(100% / 3 - 20px);
+      margin: 0 10px 10px;
+  }
+}
+
+.FeaturedPost .PostTitle {
+  font-size: 2.2rem;
+}
+
+@media (min-width: 768px) {
+  .FeaturedPost .PostTitle {
+      font-size: 2.6rem;
+  }
+}
+
+.PostList {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .PostList {
+      width: calc((100% / 3) * 2);
+  }
+}
+
+.PostLink {
+  color: currentColor;
+  display: block;
+  text-decoration: none;
+}
+.PostLink img {
+  opacity: 1;
+  transition: opacity 160ms linear;
+}
+.PostLink:hover img {
+  opacity: 0.5;
+}
+
+.PostArticle {
+  border-bottom: 2px solid #f2f2f2;
+  padding: 20px 0;
+  margin: 0 0 20px;
+}
+
+.Post {
+  display: flex;
+}
+
+.PostImage {
+  width: 160px;
+  margin-right: 28px;
+}
+
+@media (min-width: 768px) {
+  .PostImage {
+      width: 240px;
+  }
+}
+
+.PostContent {
+  flex: 1;
+}
+.FeaturedImage {
+  background: #ddd;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.FeaturedImage img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.SiteBody {
+  flex: 1;
+  padding-bottom: 40px;
+}
+
+.SiteFooter {
+  background: #fceeed;
+  padding: 80px 0;
+}
+
+.SiteFooterContent {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Copyright {
+  font-size: 1.3rem;
+  margin: 8px 0 0;
+  opacity: 0.5;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .Copyright {
+      text-align: left;
+  }
+}
+#tbl {
+  padding: 40px 0;
+}
+#selection{
+  margin: 0px 260px 0px 40px;
+}
+#textbox{
+  margin: 0px 300px 0px 40px;
+}
